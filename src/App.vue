@@ -1,17 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <AdminHoteles/>
+  <LoadingModal/>
+  <AlertasModal/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import AdminHoteles from './pages/AdminHoteles.vue'
+  import LoadingModal from './components/LoadingModal.vue';
+  import AlertasModal from './components/Alertas.vue';
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  export default {
+    name: 'App',  
+    components: {
+      AdminHoteles,
+      LoadingModal,
+      AlertasModal
+    },
   }
-}
 </script>
 
 <style>
@@ -19,7 +24,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
